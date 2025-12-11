@@ -14,4 +14,4 @@ Technologies used
 
 Screenshots
 
-![Screenshot 1](images/screenshot.png)
+![Screenshot 1](images/screenshot.PNG)
