@@ -7,100 +7,149 @@
     <title>Showcase</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="stylesheet" href="/style/styles.css">
+    <link rel="stylesheet" href="/style/nav.css">
 
 </head>
 
 <body>
+    <video class="bg-video" autoplay muted loop playsinline>
+        <source src="videos/back.mp4" type="video/mp4">
+        
+    </video>
+    <div class="blur"></div>
 
     <header>
-        <nav>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" alt="Logo">
+            </div>
 
-            <table width="100%" bgcolor="gray" cellpadding="5">
-                <tr>
-                    <td>
-                        <img src="images/logo.png" width="200" height="100" alt="Logo">
-                    </td>
-                    <td>
-                        <font size="5"><a href="index.html">
-                                Home</a>
-                        </font>
-                    </td>
-                    <td>
-                        <font size="5"><a href="order.html">Order</a>
-                        </font>
-                    </td>
-                    <td>
-                        <font size="5"><a href="about.html">About</a>
-                        </font>
-                    </td>
-
-                </tr>
-            </table>
-
-
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
         </nav>
 
     </header>
-    <h1 align="center">Welcome To Showcase Autosales</h1>
-    <section>
-        <center>
-            <table cellspacing="50">
-                <tr>
-                    <td align="center"><a href="https://www.youtube.com/watch?v=89YyLTVaSbI" target="_blank"><img
-                                src="images/minibus.png" width="200" height="150" alt="Minibus"></a><br>Minibus</td>
-                    <td align="center"><a href="https://www.youtube.com/watch?v=LHhoBwvkerc" target="_blank"><img
-                                src="images/pickup.png" width="200" height="150" alt="Pickup"></a><br>Pickup</td>
-                    <td align="center"><a href="https://www.youtube.com/watch?v=4y1vOUmZckY" target="_blank"><img
-                                src="images/suv.png" width="200" height="150" alt="Suv"></a><br>Suv</td>
-                    <td align="center"><a href="https://www.youtube.com/watch?v=SmSFjAhkCZQ" target="_blank"><img
-                                src="images/truck.png" width="200" height="150" alt="Truck"></a><br>Truck</td>
-                </tr>
+    
 
-            </table>
-        </center>
+    <section class="category-section">
 
-    </section>
-    <section>
-        <div class="container">
-        
-            <div class="car">
-                <img src="images/hellcat.webp" alt="Dodge Hellcat">
-                <div class="price">ETB 8,000,000</div>
-                <h3>Dodge Hellcat 2024</h3>
-                <p>0921324354<br>2024 | benzine<br>Posted: About 1 day ago</p>
-            </div>
-        
-            <div class="car">
-                <img src="images/F150.jpg" alt="Ford F150">
-                <div class="price">ETB 7,500,000</div>
-                <h3>Ford F150 2020</h3>
-                <p>0921224150<br>2020 | benzine<br>Posted: About 5 hours ago</p>
-            </div>
-        
-            <div class="car">
-                <img src="images/roadster.webp" alt="Tesla Roadster">
-                <div class="price">ETB 5,000,000</div>
-                <h3>Tesla Roadster</h3>
-                <p>0912149874<br>2026 | benzine<br>Posted: About 3 years ago</p>
-            </div>
-        
-            <div class="car">
-                <img src="images/gwagon.webp" alt="Mercedes Gwagon">
-                <div class="price">ETB 15,000,000</div>
-                <h3>Mercedes Gwagon 2025 (Limited)</h3>
-                <p>0956786543<br>2025 | benzine<br>Posted: About 1 hour ago</p>
-            </div>
-        
+        <div class="category-container">
+
+            <a href="https://www.youtube.com/watch?v=89YyLTVaSbI" target="_blank" class="category">
+                <img src="images/minibus.png" alt="Minibus">
+                <span>Minibus</span>
+            </a>
+
+            <a href="https://www.youtube.com/watch?v=LHhoBwvkerc" target="_blank" class="category">
+                <img src="images/pickup.png" alt="Pickup">
+                <span>Pickup</span>
+            </a>
+
+            <a href="https://www.youtube.com/watch?v=4y1vOUmZckY" target="_blank" class="category">
+                <img src="images/suv.png" alt="SUV">
+                <span>SUV</span>
+            </a>
+
+            <a href="https://www.youtube.com/watch?v=SmSFjAhkCZQ" target="_blank" class="category">
+                <img src="images/truck.png" alt="Truck">
+                <span>Truck</span>
+            </a>
+
         </div>
 
     </section>
+
+    <section>
+        <div class="container">
+
+            <div class="car">
+                <img src="images/hellcat.webp" alt="Dodge Hellcat">
+
+                <div class="card-body">
+                    <div class="price">ETB 8,000,000</div>
+
+                    <h3 class="title">Dodge Hellcat 2024</h3>
+
+                    <div class="info">
+                        <span>📞 0921324354</span>
+                        <span>📅 2024</span>
+                        <span>⛽ Benzine</span>
+                    </div>
+
+                    <p class="posted">Posted · 1 day ago</p>
+                </div>
+            </div>
+
+            <div class="car">
+                <img src="images/F150.jpg" alt="Ford F150">
+
+                <div class="card-body">
+                    <div class="price">ETB 7,500,000</div>
+
+                    <h3 class="title">Ford F150 2020</h3>
+
+                    <div class="info">
+                        <span>📞 0921224150</span>
+                        <span>📅 2020</span>
+                        <span>⛽ Benzine</span>
+                    </div>
+
+                    <p class="posted">Posted · 5 hours ago</p>
+                </div>
+            </div>
+
+            <div class="car">
+                <img src="images/roadster.webp" alt="Tesla Roadster">
+
+                <div class="card-body">
+                    <div class="price">ETB 5,000,000</div>
+
+                    <h3 class="title">Tesla Roadster</h3>
+
+                    <div class="info">
+                        <span>📞 0912149874</span>
+                        <span>📅 2026</span>
+                        <span>⛽ Benzine</span>
+                    </div>
+
+                    <p class="posted">Posted · 3 years ago</p>
+                </div>
+            </div>
+
+            <div class="car">
+                <img src="images/gwagon.webp" alt="Mercedes Gwagon">
+
+                <div class="card-body">
+                    <div class="price">ETB 15,000,000</div>
+
+                    <h3 class="title">Mercedes Gwagon 2025 (Limited)</h3>
+
+                    <div class="info">
+                        <span>📞 0956786543</span>
+                        <span>📅 2025</span>
+                        <span>⛽ Benzine</span>
+                    </div>
+
+                    <p class="posted">Posted · 1 hour ago</p>
+                </div>
+            </div>
+
+        </div>
+
+
+    </section>
 </body>
-<hr>
-<footer>
-    Bole Road,<br>
-    Getu Commercial Center<br>
-    4th Floor, #405<br>
-    Tel: +251 944 333333
+<hr class="footer-divider">
+
+<footer class="footer-compact">
+    <span>📍 Bole Road, Getu Commercial Center, 4th Floor #405</span>
+    <span class="dot">•</span>
+    <span>📞 +251 944 333333</span>
 </footer>
+
+
 
 </html>
