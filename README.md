@@ -14,4 +14,7 @@ Technologies used
 
 Screenshots
 
-<img src="images/Screenshot.PNG" width="400">
+<p float="left">
+  <img src="images/screenshot.PNG" width="45%">
+  <img src="images/screenshot.PNG" width="45%">
+</p>
