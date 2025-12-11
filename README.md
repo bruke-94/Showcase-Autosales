@@ -14,4 +14,4 @@ Technologies used
 
 Screenshots
 
-![Screenshot 1](images/screenshot.PNG)
+<img src="images/screenshot1.png" width="400">
