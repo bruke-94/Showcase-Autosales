@@ -15,6 +15,6 @@ Technologies used
 Screenshots
 
 <p float="left">
-  <img src="images/screenshot.PNG" width="45%" >
+  <img src="images/Screenshot.PNG" width="45%" >
   <img src="images/screenshot1.PNG" width="45%" >
 </p>
