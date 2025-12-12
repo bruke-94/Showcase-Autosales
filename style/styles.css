@@ -168,18 +168,18 @@ html {
   background: #e0e0e0;
 }
 
-.footer-compact {
+.footer {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 12px;
 
   font-size: 13px;
-  color: #666;
+  color: #9b8c8c;
   padding-bottom: 30px;
   flex-wrap: wrap;
 }
 
-.footer-compact .dot {
+.footer .dot {
   color: #aaa;
 }
