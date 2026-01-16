@@ -183,3 +183,42 @@ html {
 .footer .dot {
   color: #aaa;
 }
+
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    margin: 30px auto 40px;
+    width: 100%;
+}
+
+#searchInput {
+    width: 320px;
+    max-width: 90%;
+    padding: 14px 20px;
+    font-size: 16px;
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(0, 0, 0, 0.55);
+    color: #fff;
+    outline: none;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(8px);
+}
+
+#searchInput::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+
+#searchInput:hover {
+    background: rgba(0, 0, 0, 0.65);
+}
+
+
+#searchInput:focus {
+    border-color: #00c3ff;
+    box-shadow: 0 0 12px rgba(0, 195, 255, 0.6);
+    background: rgba(0, 0, 0, 0.75);
+}
+
