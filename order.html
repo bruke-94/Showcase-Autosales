@@ -1,23 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Order</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link rel="stylesheet" href="/style/styles.css">
     <link rel="stylesheet" href="/style/nav.css">
     <link rel="stylesheet" href="/style/order.css">
 </head>
 
 <body>
+
+   
     <video class="bg-video" autoplay muted loop playsinline>
         <source src="videos/back.mp4" type="video/mp4">
-    
     </video>
     <div class="blur"></div>
 
+    
     <header>
         <nav class="navbar">
             <div class="logo">
@@ -28,70 +31,83 @@
 
             <ul class="links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="order.html">Order</a></li>
+                <li><a href="order.html" class="active">Order</a></li>
                 <li><a href="about.html">About</a></li>
             </ul>
         </nav>
+    </header>
 
-    </header><br><br>
-  
+    <br><br>
+
+   
     <section class="form-section">
-        <form class="order-form">
+        <form class="order-form" id="orderForm">
 
             <h2 class="form-title">Order Form</h2>
 
+          
             <div class="form-group">
                 <label for="username">Customer Full Name</label>
-                <input type="text" id="username" placeholder="Enter your full name">
+                <input type="text" id="username" placeholder="Enter your full name" required>
             </div>
 
+          
             <div class="form-group">
                 <label for="email">Contact Email</label>
-                <input type="email" id="email" placeholder="Enter your email">
+                <input type="email" id="email" placeholder="Enter your email" required>
             </div>
 
+          
             <div class="form-group">
                 <label for="cars">Select a Car</label>
-                <select id="cars">
-                    <option>Dodge Hellcat</option>
-                    <option>Tesla Roadster</option>
-                    <option>Ford F150</option>
-                    <option>Mercedes Gwagon</option>
+                <select id="cars" required>
+                    <option value="">-- Select a car --</option>
+                    <option value="Dodge Hellcat">Dodge Hellcat</option>
+                    <option value="Tesla Roadster">Tesla Roadster</option>
+                    <option value="Ford F150">Ford F150</option>
+                    <option value="Mercedes G-Wagon">Mercedes G-Wagon</option>
                 </select>
             </div>
 
+         
             <div class="form-group">
                 <label>Vehicle Color</label>
                 <div class="options">
-                    <label><input type="radio" name="color"> Red</label>
-                    <label><input type="radio" name="color"> White</label>
-                    <label><input type="radio" name="color"> Black</label>
+                    <label><input type="radio" name="color" value="Red"> Red</label>
+                    <label><input type="radio" name="color" value="White"> White</label>
+                    <label><input type="radio" name="color" value="Black"> Black</label>
                 </div>
             </div>
 
+           
             <div class="form-group">
                 <label>Additional Features</label>
                 <div class="options">
-                    <label><input type="checkbox"> Sunroof</label>
-                    <label><input type="checkbox"> GPS Navigation</label>
-                    <label><input type="checkbox"> Leather Seats</label>
-                    <label><input type="checkbox"> Rear Camera</label>
+                    <label><input type="checkbox" value="Sunroof"> Sunroof</label>
+                    <label><input type="checkbox" value="GPS Navigation"> GPS Navigation</label>
+                    <label><input type="checkbox" value="Leather Seats"> Leather Seats</label>
+                    <label><input type="checkbox" value="Rear Camera"> Rear Camera</label>
                 </div>
             </div>
 
+          
             <button type="submit" class="submit-btn">Place Order</button>
 
         </form>
     </section>
 
+    <hr class="divider">
+
+  
+    <footer class="footer">
+        <span>📍 Bole Road, Getu Commercial Center, 4th Floor #405</span>
+        <span class="dot">•</span>
+        <span>📞 +251 944 333333</span>
+    </footer>
+
+   
+    <script src="js/order.js"></script>
+
 </body>
-<hr class="divider">
-
-<footer class="footer">
-    <span>📍 Bole Road, Getu Commercial Center, 4th Floor #405</span>
-    <span class="dot">•</span>
-    <span>📞 +251 944 333333</span>
-</footer>
-
 
 </html>
